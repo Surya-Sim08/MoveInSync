@@ -51,7 +51,7 @@ def allocate_driver(graph, start, destination, min_rating):
     # Now we are finding the nearest driver with the shortest path to the destination
     min_cost = float('inf')
     allocated_driver = None
-    for driver, distances in shortest_paths.items():
+    for driver, distances in short_paths.items():
         if distances[destination] < min_cost:
             min_cost = distances[destination]
             allocated_driver = driver
